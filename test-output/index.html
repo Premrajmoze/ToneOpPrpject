@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MyProfileTestSuite" class="navigator-link">
-              <span class="suite-name border-failed">MyProfileTestSuite</span>
+              <span class="suite-name border-passed">MyProfileTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MyProfileTestSuite" class="hide-methods failed suite-MyProfileTestSuite"> (hide)</a> <!-- hide-methods failed suite-MyProfileTestSuite -->
-                      <a href="#" panel-name="suite-MyProfileTestSuite" class="show-methods failed suite-MyProfileTestSuite"> (show)</a> <!-- show-methods failed suite-MyProfileTestSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyProfileTestSuite" class="hide-methods passed suite-MyProfileTestSuite"> (hide)</a> <!-- hide-methods passed suite-MyProfileTestSuite -->
+                      <a href="#" panel-name="suite-MyProfileTestSuite" class="show-methods passed suite-MyProfileTestSuite"> (show)</a> <!-- show-methods passed suite-MyProfileTestSuite -->
                     </span>
-                    <div class="method-list-content failed suite-MyProfileTestSuite">
+                    <div class="method-list-content passed suite-MyProfileTestSuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyProfileTestSuite" title="tests.basicInformationUpdate" class="method navigator-link" hash-for-method="verifyBasicInformationUpdate">verifyBasicInformationUpdate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyProfileTestSuite" title="tests.locationUpdateTest" class="method navigator-link" hash-for-method="verifyLocationUpdate">verifyLocationUpdate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-MyProfileTestSuite -->
+                    </div> <!-- method-list-content passed suite-MyProfileTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +123,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MyProfileTestSuite" class="panel MyProfileTestSuite">
-          <div class="suite-MyProfileTestSuite-class-failed">
+          <div class="suite-MyProfileTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.locationUpdateTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,33 +134,25 @@
                   <a name="verifyLocationUpdate">
                   </a> <!-- verifyLocationUpdate -->
                   <span class="method-name">verifyLocationUpdate</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [2d968d9f-ddc4-425e-ab5f-8551acb1e196, findElement {using=xpath, value=//android.widget.EditText[@text=&quot;Pune, Maharashtra&quot;]}]
-Capabilities {appium:appActivity: com.toneop.mobile.MainActivity, appium:appPackage: com.toneop.mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.toneop.mobile.MainActivity, appPackage: com.toneop.mobile, automationName: UiAutomator2, deviceName: IZ7LOROF4TRGUWCY, ignoreHiddenApiPolicyError: true, noReset: true, platformName: ANDROID, platformVersion: 14.0}, appium:deviceApiLevel: 34, appium:deviceManufacturer: OPPO, appium:deviceModel: CPH2385, appium:deviceName: IZ7LOROF4TRGUWCY, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1612, appium:deviceUDID: IZ7LOROF4TRGUWCY, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 14, appium:statBarHeight: 64, appium:takesScreenshot: true, appium:viewportRect: {height: 1548, left: 0, top: 64, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 2d968d9f-ddc4-425e-ab5f-8551acb1e196
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at pages.myProfilePage.updateLocation(myProfilePage.java:55)
-	at tests.locationUpdateTest.verifyLocationUpdate(locationUpdateTest.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MyProfileTestSuite-class-failed -->
+          </div> <!-- suite-MyProfileTestSuite-class-passed -->
+          <div class="suite-MyProfileTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.basicInformationUpdate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBasicInformationUpdate">
+                  </a> <!-- verifyBasicInformationUpdate -->
+                  <span class="method-name">verifyBasicInformationUpdate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyProfileTestSuite-class-passed -->
         </div> <!-- panel MyProfileTestSuite -->
         <div panel-name="test-xml-MyProfileTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -169,6 +166,7 @@ Session ID: 2d968d9f-ddc4-425e-ab5f-8551acb1e196
   &lt;test thread-count=&quot;5&quot; name=&quot;MyProfileTests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.locationUpdateTest&quot;/&gt;
+      &lt;class name=&quot;tests.basicInformationUpdate&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MyProfileTests --&gt;
 &lt;/suite&gt; &lt;!-- MyProfileTestSuite --&gt;
@@ -182,7 +180,7 @@ Session ID: 2d968d9f-ddc4-425e-ab5f-8551acb1e196
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">MyProfileTests (1 class)</span>
+                <span class="test-name">MyProfileTests (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,16 +206,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLocationUpdate')
-data.setCell(0, 2, 'tests.locationUpdateTest')
-data.setCell(0, 3, 14855);
+data.setCell(0, 1, 'verifyBasicInformationUpdate')
+data.setCell(0, 2, 'tests.basicInformationUpdate')
+data.setCell(0, 3, 56616);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLocationUpdate')
+data.setCell(1, 2, 'tests.locationUpdateTest')
+data.setCell(1, 3, 23089);
 window.suiteTableData['MyProfileTestSuite']= { tableData: data, tableDiv: 'times-div-MyProfileTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-MyProfileTestSuite">
               </div> <!-- times-div-MyProfileTestSuite -->
             </div> <!-- times-div -->
@@ -249,14 +251,27 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyLocationUpdate</span>
-                <span class="method-start">9543 ms</span>
+                <span class="method-start">14731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24408 ms</span>
+                <span class="method-start">37834 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.basicInformationUpdate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38890 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyBasicInformationUpdate</span>
+                <span class="method-start">48263 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">104888 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

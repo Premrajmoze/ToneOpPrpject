@@ -37,8 +37,9 @@ public class myProfilePage {
     private By updateHeigth = By.xpath("//android.view.ViewGroup[@content-desc=\"Update Height\"]");
     private By unitWieght = By.xpath("//android.view.ViewGroup[@content-desc=\"Kg\"]/android.widget.ImageView");
     private By selectLbsWeight = By.xpath("//android.widget.TextView[@text=\"Lbs\"]");
-    private By Weight = By.xpath("(//android.widget.EditText[@resource-id=\"text-input-outlined\"])[6]");
-    private By updateWieght = By.xpath("//android.widget.TextView[@text=\"Update Weight\"]");
+    private By weight = By.xpath("(//android.view.ViewGroup[@resource-id=\"text-input-outline\"])[6]");
+    private By updateWieght = By.xpath("//android.view.ViewGroup[@content-desc=\"Update Weight\"]");
+    
     private By targetWieght = By.xpath("(//android.widget.EditText[@resource-id=\"text-input-outlined\"])[7]");
     private By updatetargetWieght = By.xpath("//android.widget.TextView[@text=\"Update Weight\"]");
     private By submit = By.xpath("//android.widget.TextView[@text=\"Submit\"]");
@@ -83,7 +84,7 @@ public class myProfilePage {
         driver.findElement(updateHeigth).click();
         driver.findElement(unitWieght).click();
         driver.findElement(selectLbsWeight).click();
-        driver.findElement(Weight).click();
+        driver.findElement(weight).click();
         driver.findElement(updateWieght).click();
         driver.findElement(targetWieght).click();
         driver.findElement(updatetargetWieght).click();

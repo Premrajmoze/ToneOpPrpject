@@ -3,13 +3,13 @@
 <suite name="Failed suite [MyProfileTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="MyProfileTests(failed)">
     <classes>
-      <class name="tests.locationUpdateTest">
+      <class name="tests.basicInformationUpdate">
         <methods>
-          <include name="verifyLocationUpdate"/>
-          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyBasicInformationUpdate"/>
         </methods>
-      </class> <!-- tests.locationUpdateTest -->
+      </class> <!-- tests.basicInformationUpdate -->
     </classes>
   </test> <!-- MyProfileTests(failed) -->
 </suite> <!-- Failed suite [MyProfileTestSuite] -->

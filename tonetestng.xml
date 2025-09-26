@@ -1,10 +1,16 @@
+
+
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="MyProfileTestSuite" parallel="false">
-    <test name="MyProfileTests" parallel="false">
+<suite name="MyProfileTestSuite" verbose="1" parallel="false">
+
+    <test name="MyProfileTests">
         <classes>
-            <!-- First class to run -->
+            <!-- First Class -->
             <class name="tests.locationUpdateTest"/>
             
+            <!-- Second Class -->
+            <class name="tests.basicInformationUpdate"/>
         </classes>
     </test>
+
 </suite>
